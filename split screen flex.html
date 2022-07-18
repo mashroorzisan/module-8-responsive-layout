@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split screen display</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+
+        }
+
+        header {
+            background-image: linear-gradient(to right, rgba(0, 102, 235, 0.377), rgba(10, 253, 180, 0.377), rgba(199, 24, 112, 0.377)), url("pexels-vlad-alexandru-popa-1402787.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            border: 1px solid dimgray;
+        }
+
+        .border {
+            background-color: rgba(0, 0, 0, 0.644);
+            padding: 1%;
+        }
+
+        .border span {
+            font-size: 1.5rem;
+            color: rgb(190, 190, 190);
+            padding: 1.5%;
+        }
+
+        .border span:hover {
+            color: white;
+        }
+
+        main h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .split {
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        .one {
+            width: 50%;
+        }
+
+        @media screen and (max-width:576px) {
+            .split {
+                flex-direction: column;
+            }
+
+            .one {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="border">
+            <span>Home</span>
+            <span>Menu</span>
+            <span>Contact</span>
+        </div>
+    </header>
+    <main>
+        <h1>
+            This is a test blog
+        </h1>
+        <div class="split">
+            <div class="one"><img src=" 205913.jpg" alt=""></div>
+            <div class="one"><img src="pexels-pixabay-45911.jpg" alt=""></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
