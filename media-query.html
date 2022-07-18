@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 1.8%;
+        }
+
+        .food {
+            padding: 50px;
+            border: 3px solid gainsboro;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: cornsilk;
+            color: lightslategrey;
+        }
+
+        .food:hover {
+            color: rgb(0, 6, 95);
+            border: 3px solid rgb(61, 61, 61);
+        }
+
+        .food img {
+            width: 75%;
+        }
+
+        .head {
+            padding: .8%;
+            margin-bottom: 1.8%;
+            background-color: rgba(228, 53, 0, 0.986);
+            border-bottom: 2px solid goldenrod;
+        }
+
+        .head span {
+            font-size: 1.5em;
+            padding: 30px;
+            color: white;
+            font-weight: bolder;
+
+        }
+
+        .menu {
+            text-align: center;
+            font-size: 68px;
+            color: darkslateblue
+        }
+
+        .menu:hover {
+            color: darkolivegreen;
+        }
+
+        .head span:hover {
+            color: darkred;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .head span {
+                padding: 20px;
+                font-size: 1.5em;
+            }
+        }
+
+        @media screen and (min-width:577px) and (max-width:943px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        footer {
+            height: 20vh;
+            background-color: darkslategray;
+            padding-top: 10vh;
+        }
+
+        footer h3 {
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <span>Home</span>
+        <span>Menu</span>
+        <span>Items</span>
+        <span>Bookings</span>
+
+    </header>
+    <h1 class="menu">Menu-card</h1>
+    <div class="container">
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-1</h2>
+            <h4>price-100</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum id accusamus consequuntur nobis, ipsum
+                reprehenderit praesentium placeat labore aperiam soluta, provident inventore iste sequi asperiores et
+                animi distinctio necessitatibus obcaecati.</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-2</h2>
+            <h4>price-200</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quia ad tempora magnam doloremque sit
+                sapiente suscipit ea, deserunt sint aperiam autem eos reiciendis consectetur? Illo soluta totam earum
+                odio?</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-3</h2>
+            <h4>price-300</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet iusto ab iure quas ex veniam dolorem
+                nisi, fugit incidunt officia, ut deleniti! Aut ducimus, hic beatae et quibusdam tempore!</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-4</h2>
+            <h4>price-400</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia omnis ea optio dolor corrupti reiciendis
+                vero magnam, maiores maxime tenetur at nihil voluptates veritatis excepturi nisi molestiae architecto
+                vitae suscipit!</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-5</h2>
+            <h4>price-500</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nemo commodi cumque beatae repellat
+                officia nulla veritatis, voluptates, architecto sunt eveniet vero. Voluptatem sunt consequuntur iure
+                beatae dolorum eius doloribus?</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-6</h2>
+            <h4>price-600</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum tempore libero, mollitia saepe
+                explicabo sunt cupiditate quod at nihil tempora officiis vero? Voluptas quam veniam necessitatibus quos
+                sit, enim illum?</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-7</h2>
+            <h4>price-700</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sed officiis aut libero dolore totam
+                accusamus quod quisquam cum earum mollitia consectetur nisi aperiam quibusdam, fugiat molestiae
+                veritatis a. Quia.</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-8</h2>
+            <h4>price-800</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias expedita asperiores aliquam, ipsum
+                magni illo. Ipsam dolorem maiores, voluptas sit officiis, culpa labore quis nesciunt libero aliquam
+                saepe dignissimos laboriosam?</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-9</h2>
+            <h4>price-900</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eveniet minima. Porro voluptatem
+                ut obcaecati quae a, distinctio vitae. Obcaecati, ut? Harum beatae at quia ipsam ut reiciendis, maxime
+                minima!</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-10</h2>
+            <h4>price-1000</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus illo necessitatibus facilis
+                obcaecati adipisci iusto deserunt sunt eius atque dolores! Id, cupiditate nemo veniam nostrum temporibus
+                nam provident corrupti ea!</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-11</h2>
+            <h4>price-1100</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos culpa dolor quo repellendus deleniti
+                voluptate nulla? Laborum, veritatis odit eveniet ab aliquam suscipit soluta dignissimos, quasi beatae
+                corrupti obcaecati? Deleniti?</p>
+        </div>
+        <div class="food">
+            <img src="23917-4-salad-file.png" alt="">
+            <h2>Item-12</h2>
+            <h4>price-1200</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, expedita deserunt veniam animi possimus
+                ratione doloremque molestias nostrum porro. Voluptate nulla nobis quidem sint labore natus, dolor
+                obcaecati nesciunt voluptatem?</p>
+        </div>
+    </div>
+    <footer>
+        <h3>this is my footer</h3>
+    </footer>
+</body>
+
+</html>
